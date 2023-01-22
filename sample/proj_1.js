@@ -1,5 +1,3 @@
-import Header from "./Header.js";
-
 const page = (
     <div>
         <img src = "/img/React_Logo.png" width = "100px"></img>
@@ -13,6 +11,21 @@ const page = (
         </ul>
     </div>
 )
+
+function Header() {
+    return (
+<header>
+    <nav className = "nav">
+        <img src = "/img/React_Logo.png" className="nav-logo"></img>
+        <ul className = "nav-items">
+            <li>About Us</li>
+            <li>Pricing</li>
+            <li>Contacts</li>
+        </ul>
+    </nav>
+</header>
+    )
+}
 
 function Content() {
     return (
