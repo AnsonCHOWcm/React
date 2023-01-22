@@ -1,0 +1,13 @@
+body{
+    background-image: url("/img/React_Logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+a{
+    color: rgb(64, 171, 224);
+}
+
+h1{
+    color: rgb(64, 171, 224);
+}

@@ -1,0 +1,19 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-logo{
+    width: 100px;
+}
+
+.nav-items>li{
+    padding: 10px;
+}
