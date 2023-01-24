@@ -1,0 +1,28 @@
+.FirstProjNavBar {
+    display:flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 90px;
+    padding: 30px 25px;
+}
+
+.FirstProjNavBar > h3 ,.FirstProjNavBar > h4 {
+    margin : 0;
+}
+
+.FirstProjNavBar > h3 {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.FirstProjNavBar > h4 {
+    color: #DEEBF8;
+    font-weight: 600;
+}
+
+.FirstProjNavBar > img{
+    height: 30px;
+    margin-right: 7;
+}

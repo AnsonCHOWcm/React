@@ -46,7 +46,7 @@ const NotesMultiPages = () => {
                 <br></br>
                 Create function App to gather all the pages by including Navbar for linkage information and indicating different route for different pages
                 <br></br>
-                path : define actual raltive path & element refer the corresponds page
+                path : define actual raltive path & element : refer the corresponds page
                 <br></br>
                 <img src = {step3_12_AppFunct} alt = "" width = "500px" ></img>
             </p>

@@ -1,0 +1,17 @@
+.SecondProjNavBar {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    height: 90px;
+    padding: 30px 25px;
+}
+
+.SecondProjNavBar > img{
+    height: 100px;
+    margin-left: 0;
+}
+
+.SecondProjNavBar > h4{
+    margin: 0;
+}

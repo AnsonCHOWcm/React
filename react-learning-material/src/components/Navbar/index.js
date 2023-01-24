@@ -17,7 +17,10 @@ return (
 			Notes-MultiPages
 		</NavLink>
 		<NavLink to="/proj_1" activeStyle>
-			First Projects
+			First Project
+		</NavLink>
+		<NavLink to="/proj_2" activeStyle>
+			Second Project
 		</NavLink>
 		</NavMenu>
 	</Nav>
