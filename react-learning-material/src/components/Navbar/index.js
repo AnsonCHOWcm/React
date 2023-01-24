@@ -7,17 +7,17 @@ return (
 	<>
 	<Nav>
 		<NavMenu>
-		<NavLink to="/about" activeStyle>
-			About
+		<NavLink to="/" activeStyle>
+			Homepage
 		</NavLink>
-		<NavLink to="/contact" activeStyle>
-			Contact Us
+		<NavLink to="/notes" activeStyle>
+			Notes
 		</NavLink>
-		<NavLink to="/blogs" activeStyle>
-			Blogs
+		<NavLink to="/notes-multipages" activeStyle>
+			Notes-MultiPages
 		</NavLink>
-		<NavLink to="/sign-up" activeStyle>
-			Sign Up
+		<NavLink to="/proj_1" activeStyle>
+			First Projects
 		</NavLink>
 		</NavMenu>
 	</Nav>

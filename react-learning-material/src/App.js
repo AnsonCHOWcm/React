@@ -4,10 +4,9 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route}
 	from 'react-router-dom';
 import Home from './pages';
-import About from './pages/about';
-import Blogs from './pages/blogs';
-import SignUp from './pages/signup';
-import Contact from './pages/contact';
+import Notes from './pages/Notes';
+import NotesMultiPage from './pages/NotesMultiPage';
+import FirstProj from './pages/FirstProj';
 
 
 function App() {
@@ -15,11 +14,10 @@ return (
 	<Router>
 	<Navbar />
 	<Routes>
-		<Route exact path='/' exact element={<Home />} />
-		<Route path='/about' element={<About/>} />
-		<Route path='/contact' element={<Contact/>} />
-		<Route path='/blogs' element={<Blogs/>} />
-		<Route path='/sign-up' element={<SignUp/>} />
+		<Route path='/' element={<Home />} />
+		<Route path='/notes' element={<Notes/>} />
+		<Route path='/notes-multipages' element={<NotesMultiPage/>} />
+		<Route path='/proj_1' element={<FirstProj/>} />
 	</Routes>
 	</Router>
 );

@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.PageHeader {
+  color: rgb(64, 171, 224);
+}
