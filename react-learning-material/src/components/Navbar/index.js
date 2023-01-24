@@ -1,11 +1,15 @@
 import React from "react";
 import { Nav, NavLink, NavMenu }
 	from "./NavbarElements";
+import "./ComponentNavBar.css"; 
+import logo from "./img/React_Logo.png";
 
 const Navbar = () => {
 return (
 	<>
-	<Nav>
+	<Nav className = "ComponentNavBar">
+		<img className = "ComponentNavBarLogo" src = {logo} alt = "" ></img>
+		<h1 className = "ComponentNavBarHeader1">React JS</h1>
 		<NavMenu>
 		<NavLink to="/" activeStyle>
 			Homepage

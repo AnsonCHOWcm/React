@@ -1,3 +1,8 @@
+.SecondProjBody {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
 .SecondProjNavBar {
     display: flex;
     background: #FFFFFF;
@@ -7,11 +12,91 @@
     padding: 30px 25px;
 }
 
-.SecondProjNavBar > img{
-    height: 100px;
-    margin-left: 0;
+.CardContainers{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-left: 10px;
+    justify-content:center;
+    flex: 0 0 auto;
+    
 }
 
-.SecondProjNavBar > h4{
-    margin: 0;
+.gray {
+    color: #918E9B;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.SecondProjNavBar > img{
+    height: 100px;
+}
+
+.SecondProjNavBar > h3 ,.SecondProjNavBar > h4 {
+    margin : 0;
+}
+
+.SecondProjNavBar > h3 {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.SecondProjNavBar > h4 {
+    color: black;
+    font-weight: 600;
+}
+
+.SecondProjHero {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero--photo {
+    max-width: 400 px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.hero--header {
+    margin-top: 0;
+}
+
+.hero--text {
+    margin-top: 0;
+}
+
+.cards {
+    width:175px;
+    font-size: 12px;
+    margin: 20px;
+    position: relative;
+}
+
+.cards--img {
+    width: 150px;
+    border-radius: 9px;
+}
+
+.cards--stats{
+    display: flex;
+    align-items: center;
+}
+
+.cards--star {
+    height: 14px;
+}
+
+.cards--badget{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
 }

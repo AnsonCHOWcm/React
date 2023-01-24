@@ -1,0 +1,10 @@
+.ComponentNavBarLogo {
+    width: 100px;
+    margin-right: 7;
+}
+
+.ComponentNavBarHeader1 {
+    color: rgb(64, 171, 224);
+    margin-left: 0;
+    margin-right: auto;
+}

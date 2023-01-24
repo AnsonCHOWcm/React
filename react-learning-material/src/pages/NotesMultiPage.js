@@ -9,7 +9,6 @@ import step3_2_Rendering from "./pagestyle/img/step3_2_Rendering.jpg";
 const NotesMultiPages = () => {
     return (
         <div>
-            <h1 className = "PageHeader">React Js</h1>
             <h2>Step 1 - Making Project Dependency with React Router on cml</h2>
             <img src = {step_1} alt = "" width = "500px"></img>
             <h2>Step 2 - Creating relevant folders</h2>
