@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "./ThirdProjComponent/Head";
-import Main from "./ThirdProjComponent/Main";
 import Meme from "./ThirdProjComponent/Meme";
 
 const ThirdProj = () => {
@@ -8,7 +7,6 @@ const ThirdProj = () => {
     <body className = "ThirdProjBody">
         <Head/>
         <Meme/>
-        <Main/>
     </body>
     );
 };
