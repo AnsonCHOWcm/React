@@ -26,3 +26,13 @@
     color: #4A4E74;
     margin-top: 0;
 }
+
+.FinalProj--Button {
+    width: 120px;
+    height: 120px;
+    margin: 60px 60px;
+}
+
+.FinalProj--GameEnteringQ--InputBar {
+    margin: 20px;
+}
