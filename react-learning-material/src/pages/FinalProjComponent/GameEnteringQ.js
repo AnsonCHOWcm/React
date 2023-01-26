@@ -1,13 +1,19 @@
 import React from "react";
 
 const GameEnteringQ = (props) => {
+
+    const handleChange = (event) => {
+        props.changeDiceMethod(event.target.value)
+    };
+
     return (
         <div className="FinalProj--GameEnteringQ">
-        <h1>How many Dices you would like to play?</h1>
-        <h2>{props.messageShown}</h2>
+        <h1>{props.numberDice.messageShown}</h1>
         <input 
         className="FinalProj--GameEnteringQ--InputBar"
-        placeholder="Mumber of Dices"
+        placeholder="Number of Dices"
+        value = {props.numberDice.number}
+        onChange = {handleChange}
         />
         </div>
 

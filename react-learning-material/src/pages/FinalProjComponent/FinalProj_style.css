@@ -36,3 +36,12 @@
 .FinalProj--GameEnteringQ--InputBar {
     margin: 20px;
 }
+
+.FinalProj--Button {
+    background: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border-radius: 3.81277px;
+    height: 30px;
+    margin-top: 10px;
+    color: white;
+}

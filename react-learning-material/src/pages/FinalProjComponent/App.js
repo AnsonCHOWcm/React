@@ -6,11 +6,35 @@ import GameEnteringQ from "./GameEnteringQ";
 const App = () => {
 
     const [numberDice, setnumberDice] = React.useState({
-        "number" : 0,
-        "messageShown" : "Please enter the number of Dices"
+        "number" : "0",
+        "messageShown" : "Please enter the number of Dices",
+        "confirmDicenumber" : false
     })
 
-    const mode = numberDice.number
+    const changeDiceNumber = (inputvalue) => {
+        setnumberDice((prevnumberDice) => {
+            return(
+                {
+                    ...prevnumberDice,
+                    "number" : inputvalue
+                }
+            );
+        })
+    }
+
+    const confirmDiceMethod = (isValidnumber) => {
+        setnumberDice((prevnumberDice) => {
+            return(
+                {
+                    ...prevnumberDice,
+                    "confirmDicenumber" : isValidnumber,
+                    "messageShown" : isValidnumber ? "Please enter the number of Dices" : "Invlid Input! Please try again"
+                }
+            );
+        })
+    }
+
+    const mode = numberDice.confirmDicenumber
 
     return (
         <div className = "FinalProj--App">
@@ -19,8 +43,8 @@ const App = () => {
                 <br></br>
                 Click each dice to freeze it at its current value between rolls.
             </p>
-            {mode ? <Dice numberDice = {numberDice}/> : <GameEnteringQ numberDice = {numberDice}/>}
-            <Button numberDice = {numberDice}/>
+            {mode ? <Dice numberDice = {numberDice}/> : <GameEnteringQ numberDice = {numberDice} changeDiceMethod = {changeDiceNumber}/>}
+            <Button numberDice = {numberDice} confirmDiceMethod = {confirmDiceMethod}/>
         </div>
     );
 };
