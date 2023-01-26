@@ -72,11 +72,14 @@ color: #FFFFFF;
     max-width: 100%;
 }
 
-.ThirdProjMeme--meme > h2 {
-    font-family: 'Karla';
-    font-style: normal;
-    
-    color: #0D0D0D;
+
+.ThirdProjMeme--meme > img {
+    align-items: center;
+    margin: 0;
+    padding : 0;
+    width : 90%;
+    height : 90%;
+    position : absolute;
 }
 
 

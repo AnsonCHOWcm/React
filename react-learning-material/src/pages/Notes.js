@@ -72,7 +72,7 @@ return (
 			<br></br>
 			However, React Js provide "UseState" method so that we just need to update the value of the variable , then the website would update accordingly
 		</p>
-		<h4>Initizalizing useState</h4>
+		<h3>Initizalizing useState</h3>
 		<p>
 			Syntax : const [VAL, setVAL] = React.UseState(INITIAL_VALUE)
 			<br></br>
@@ -151,6 +151,25 @@ return (
 		<p>We can define sth function to be trigger when subit is kicked</p>
 		<img src = {SubmitTriggerFunct} alt = "" width = "500px"></img>
 		<p>we would add line "event.preventDefault()" in the submit trigger function to prevent refreshing the website after submit</p>
+		<h3>Interacting with other systems : useEffect</h3>
+		<p>
+			In general, we may want to interact with the third-party software via API
+			<br></br>
+			It may cause duplicated calls when we just define the API calls in the React Components because the component block would be executed after each rendering
+			<br></br>
+			React provide "useEffect" methods to manage those function calls without making duplicated calls
+		</p>
+		<p>
+			Syntax : "React.useEffect(FUNC ,DEP_ARRAY)"
+		</p>
+		<p>
+			We inccluded all the external communicating functions call within RUNC while DEP_ARRAY would storage a value if that value changes, the FUNC would be executed
+		</p>
+		<p>
+			***If the DEP_ARRAY is empty, then it would only be called once
+			<br></br>
+			***The FUNC we defined can only return a cleanup function to remove/unwind all the effects
+		</p>
 	</div>
 );
 };

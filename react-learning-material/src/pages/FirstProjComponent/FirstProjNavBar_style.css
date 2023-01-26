@@ -20,9 +20,78 @@
 .FirstProjNavBar > h4 {
     color: #DEEBF8;
     font-weight: 600;
+    margin-left: 5px;
 }
 
 .FirstProjNavBar > img{
     height: 30px;
     margin-right: 7;
 }
+
+.Switch--Light, .Switch--Dark {
+    color: #DEEBF8;
+}
+
+/* The switch - the box around the slider */
+.FirstProjNavBar--switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 5px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .FirstProjNavBar--switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .FirstProjNavBar--slider_round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#21222A;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .FirstProjNavBar--slider_round:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .FirstProjNavBar--slider_round {
+    background-color: white;
+  }
+  
+  input:focus + .FirstProjNavBar--slider_round {
+    box-shadow: 0 0 1px #21222A;
+  }
+  
+  input:checked + .FirstProjNavBar--slider_round:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color:#21222A;
+  }
+
+  /* Rounded sliders */
+.FirstProjNavBar--slider_round {
+    border-radius: 34px;
+  }
+  
+.FirstProjNavBar--slider_round:before {
+    border-radius: 50%;
+  }

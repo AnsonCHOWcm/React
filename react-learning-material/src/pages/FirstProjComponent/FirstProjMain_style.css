@@ -1,10 +1,20 @@
-.FirstProjMain {
+.FirstProjMain--Dark {
     padding: 57px 27px;
-    color: white;
-    background-image: url("../pagestyle/img/react_back.png");
+    color: black;
+    background-image:  url("../pagestyle/img/react_back_light.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+}
+
+.FirstProjMain--Light {
+    padding: 57px 27px;
+    background-color: white;
+    background-image: url("../pagestyle/img/react_back_light.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .main--title {
