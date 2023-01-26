@@ -1,0 +1,28 @@
+.FinalProj--Background {
+    position: absolute;
+    background-color: #0B2434;
+    background-size: cover;
+    width: 98.89%;
+}
+
+.FinalProj--App {
+    background: #F5F5F5;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.FinalProj--App--Title {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    color: #2B283A;
+    margin-bottom: 0;
+}
+
+.FinalProj--App--Rules {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #4A4E74;
+    margin-top: 0;
+}

@@ -29,6 +29,9 @@ return (
 		<NavLink to="/proj_3" activeStyle>
 			Third Project
 		</NavLink>
+		<NavLink to="/final_proj" activeStyle>
+			Final Project
+		</NavLink>
 		</NavMenu>
 	</Nav>
 	</>

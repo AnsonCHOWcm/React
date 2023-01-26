@@ -9,6 +9,7 @@ import NotesMultiPage from './pages/NotesMultiPage';
 import FirstProj from './pages/FirstProj';
 import SecondProj from './pages/SecondProj';
 import ThirdProj from './pages/ThirdProj';
+import FinalProj from './pages/FinalProj';
 
 
 function App() {
@@ -22,6 +23,7 @@ return (
 		<Route path='/proj_1' element={<FirstProj/>} />
 		<Route path='/proj_2' element={<SecondProj/>} />
 		<Route path='/proj_3' element={<ThirdProj/>} />
+		<Route path='/final_proj' element={<FinalProj/>} />
 	</Routes>
 	</Router>
 );
