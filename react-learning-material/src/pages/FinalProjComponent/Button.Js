@@ -2,12 +2,14 @@ import React from "react";
 
 const Button = (props) => {
 
-    const confirmedDicenumber = props.confirmDicenumber
+    const confirmedDicenumber = props.numberDice.confirmDicenumber
 
-    const confirmedGamewin = false
+    let confirmedGamewin = props.GameWin
+
+    const GameMode = props.GameMode
 
     const handleClick = () => {
-        const GameMode = false
+        
         let isValidnumber = false
         const currentinput = Number(props.numberDice.number)
 
@@ -16,25 +18,32 @@ const Button = (props) => {
 
             props.confirmDiceMethod(isValidnumber)
 
-        }
-    };
+            if (isValidnumber) {
+                props.changeGameMode()
+                props.setupDiceStatus(currentinput)
+                props.setButtonContent("Roll")
+            }
 
-    let ButtonContent
-    if (confirmedDicenumber && confirmedGamewin) {
-        ButtonContent = "Restart the Game"
-    }else if (confirmedDicenumber){
-        ButtonContent = "Roll"
-    }else{
-        ButtonContent = "Submit"
-    }
+        }else if (!confirmedGamewin){
+            props.drawDice()
+
+        }else{
+            props.RestartnumberDice()
+            props.RestartDiceStatus()
+            props.RestartGameMode()
+            props.RestartGameWin()
+            props.RestartButtonContent()
+        }
+
+    };
 
 
     return (
         <div>
             <button className="FinalProj--Button"
                 onClick={handleClick}>
-                {ButtonContent}
-        </button>
+                {props.GameWin ? "New Game" : props.ButtonContent}
+            </button>
         </div>
 
     );
